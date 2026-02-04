@@ -1,16 +1,18 @@
 export const metadata = {
   title: "StudyForge AI",
-  description: "AI-powered study platform",
-};
+  description: "Your AI-powered study companion"
+}
 
 export default function RootLayout({
-  children,
+  children
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={{ margin: 0, fontFamily: "sans-serif" }}>
+        {children}
+      </body>
     </html>
-  );
+  )
 }
